@@ -1,0 +1,5 @@
+C:\Users\13053\source\repos\boardappserver\Infra\obj\Debug\net6.0\Infra.csproj.AssemblyReference.cache
+C:\Users\13053\source\repos\boardappserver\Infra\obj\Debug\net6.0\Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\13053\source\repos\boardappserver\Infra\obj\Debug\net6.0\Infra.AssemblyInfoInputs.cache
+C:\Users\13053\source\repos\boardappserver\Infra\obj\Debug\net6.0\Infra.AssemblyInfo.cs
+C:\Users\13053\source\repos\boardappserver\Infra\obj\Debug\net6.0\Infra.csproj.CoreCompileInputs.cache

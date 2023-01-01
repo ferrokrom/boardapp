@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "WGLMbbkoXelNoB5pXK7Vi+rDtxIr5CKsUfspHzVLmO4=",
+  "Source": "boardappserver",
+  "BasePath": "_content/boardappserver",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

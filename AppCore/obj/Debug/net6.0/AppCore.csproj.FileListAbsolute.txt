@@ -1,0 +1,12 @@
+C:\Users\13053\source\repos\boardappserver\AppCore\bin\Debug\net6.0\AppCore.deps.json
+C:\Users\13053\source\repos\boardappserver\AppCore\bin\Debug\net6.0\AppCore.dll
+C:\Users\13053\source\repos\boardappserver\AppCore\bin\Debug\net6.0\AppCore.pdb
+C:\Users\13053\source\repos\boardappserver\AppCore\obj\Debug\net6.0\AppCore.csproj.AssemblyReference.cache
+C:\Users\13053\source\repos\boardappserver\AppCore\obj\Debug\net6.0\AppCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\13053\source\repos\boardappserver\AppCore\obj\Debug\net6.0\AppCore.AssemblyInfoInputs.cache
+C:\Users\13053\source\repos\boardappserver\AppCore\obj\Debug\net6.0\AppCore.AssemblyInfo.cs
+C:\Users\13053\source\repos\boardappserver\AppCore\obj\Debug\net6.0\AppCore.csproj.CoreCompileInputs.cache
+C:\Users\13053\source\repos\boardappserver\AppCore\obj\Debug\net6.0\AppCore.dll
+C:\Users\13053\source\repos\boardappserver\AppCore\obj\Debug\net6.0\refint\AppCore.dll
+C:\Users\13053\source\repos\boardappserver\AppCore\obj\Debug\net6.0\AppCore.pdb
+C:\Users\13053\source\repos\boardappserver\AppCore\obj\Debug\net6.0\ref\AppCore.dll

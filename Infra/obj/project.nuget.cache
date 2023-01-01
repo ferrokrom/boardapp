@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "OHitOGh648i/KhCQx6r9DtSDj5IHunPZV8wHay0/N5P/ek8sVJ7kjeyNyeoGunwoFZHtE3GY7ekVWiy8DDZTiA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\13053\\source\\repos\\boardappserver\\Infra\\Infra.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\13053\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\13053\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+    "C:\\Users\\13053\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0-preview.7.22375.6\\microsoft.extensions.configuration.abstractions.7.0.0-preview.7.22375.6.nupkg.sha512",
+    "C:\\Users\\13053\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0-preview.7.22375.6\\microsoft.extensions.dependencyinjection.abstractions.7.0.0-preview.7.22375.6.nupkg.sha512",
+    "C:\\Users\\13053\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0-preview.7.22375.6\\microsoft.extensions.primitives.7.0.0-preview.7.22375.6.nupkg.sha512",
+    "C:\\Users\\13053\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\13053\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
