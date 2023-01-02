@@ -7,6 +7,8 @@ using Business.Concrete;
 using Business.Mapping;
 using DataAccess.Abstract;
 using DataAccess.Concrete;
+using Microsoft.AspNetCore.SpaServices;
+using Microsoft.Extensions.Configuration;
 using Entities.Models;
 using Infrastucture.Cors;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -16,10 +18,13 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+
 using Microsoft.VisualBasic;
 using Swashbuckle.AspNetCore.Filters;
 using System.Text;
 using System.Text.Json.Serialization;
+using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
+using Microsoft.Net.Http.Headers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -53,6 +58,13 @@ builder.Services.AddAutoMapper(typeof(MapProfile));
 builder.Services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<AppilicationContext>(options => options.UseSqlServer(connectionString, b => b.MigrationsAssembly("Migrations")));
+
+
+builder.Services.AddControllersWithViews();
+builder.Services.AddSpaStaticFiles(configuration =>
+{
+    configuration.RootPath = "ClientApp/build";
+});
 
 
 
@@ -89,22 +101,48 @@ builder.Services.AddSwaggerGen(options => {
 
 var app = builder.Build();
 
+
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+else
+{
+    app.UseDefaultFiles();
+    app.UseStaticFiles();
+}
 
-
-app.UseCors("boardappclient");
 app.UserCustomException();
+
+
 
 app.UseHttpsRedirection();
 app.UseStaticFiles(new StaticFileOptions()
 {
     FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"Resources")),
     RequestPath = new PathString("/Resources")
+});
+app.UseStaticFiles();
+app.UseSpaStaticFiles();
+
+app.UseRouting();
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllers();
+});
+
+app.UseSpa(spa =>
+{
+    spa.Options.SourcePath = "ClientApp";
+    if (app.Environment.IsDevelopment())
+    {
+        spa.UseReactDevelopmentServer(npmScript: "start:staging");
+    }
+
+
 });
 
 app.UseAuthentication();

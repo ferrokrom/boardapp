@@ -19,7 +19,7 @@ namespace Infrastucture.Cors
 
                                     policy =>
                                     {
-                                        policy.WithOrigins("http://localhost:3000");
+                                        policy.WithOrigins("*");
                                         policy.AllowAnyHeader();
                                         policy.AllowAnyMethod();
                                         policy.AllowCredentials();

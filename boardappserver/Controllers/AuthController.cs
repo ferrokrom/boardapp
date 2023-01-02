@@ -16,7 +16,7 @@ using System.Security.Cryptography;
 
 namespace boardappserver.Controllers
 {
-    [Route("")]
+    [Route("api/[controller]")]
     [ApiController]
     public class AuthController :CustomeBaseController
     {
