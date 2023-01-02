@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import axios from "axios";
+import { axios } from "../../api/axios"
 import { requestHeader } from "../../api/provider";
 import { Notification } from "../../types";
 
@@ -22,7 +22,7 @@ export const getUserNotifications = ({
   userId: string;
 }): Promise<CustomResponse> => {
   return axios.get(
-    "https://localhost:7170/user/getnotifications?userId=" + userId
+    "/user/getnotifications?userId=" + userId
   );
 };
 

@@ -1,6 +1,7 @@
 import { useMutation } from "@tanstack/react-query";
-import axios, { AxiosError, AxiosResponse } from "axios";
-import { Section, Todo } from "../../../types";
+import { axios } from "../../../api/axios"
+
+import { Todo } from "../../../types";
 import { requestHeader } from "../../../api/provider";
 import { queryClient } from "../../../App";
 import { useDispatch } from "react-redux";
@@ -21,7 +22,7 @@ const header = requestHeader();
 export const createMessage = ({ data }: CreateTodoDTO): Promise<Todo[]> => {
   console.log("fetching");
   return axios.post(
-    "https://localhost:7170/user/createmessage?senderId=" + data.userId,
+    "/user/createmessage?senderId=" + data.userId,
     {
       receivers: data.body.receiver,
       subject: data.body.subject,

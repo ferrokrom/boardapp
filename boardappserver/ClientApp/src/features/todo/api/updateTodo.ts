@@ -1,5 +1,7 @@
 import { useMutation } from "@tanstack/react-query";
-import axios, { AxiosError, AxiosResponse } from "axios";
+import  { AxiosError, AxiosResponse } from "axios";
+import { axios } from "../../../api/axios"
+
 import { Board, Todo, User } from "../../../types";
 import { requestHeader } from "../../../api/provider";
 import { queryClient } from "../../../App";
@@ -33,7 +35,7 @@ const header = requestHeader();
 
 export const updateTodo = ({ data }: UpdateTodoDTO) => {
   return axios.put(
-    "https://localhost:7170/todo/update?todoId=" + data.todoId,
+    "/todo/update?todoId=" + data.todoId,
     {
       title: data.body.title,
       description: data.body.description,

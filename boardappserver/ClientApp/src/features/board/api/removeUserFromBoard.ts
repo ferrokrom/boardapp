@@ -1,6 +1,8 @@
 import { useMutation } from "@tanstack/react-query";
-import axios, { AxiosError, AxiosResponse } from "axios";
-import { Section, Board } from "../../../types";
+import  { AxiosResponse } from "axios";
+import {  Board } from "../../../types";
+import { axios } from "../../../api/axios"
+
 import { requestHeader } from "../../../api/provider";
 import { queryClient } from "../../../App";
 import { useDispatch } from "react-redux";
@@ -17,7 +19,7 @@ export const removeUserFromBoard = ({
   userId,
 }: RemoveUserFromBoardDTO): Promise<AxiosResponse> => {
   return axios.post(
-    "https://localhost:7170/api/Board/removeuserfromboard?userId=" +
+    "/api/Board/removeuserfromboard?userId=" +
       userId +
       "&boardid=" +
       boardId,

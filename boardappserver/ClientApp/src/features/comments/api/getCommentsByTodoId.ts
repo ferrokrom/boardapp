@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
-import axios from "axios";
+import { axios } from "../../../api/axios"
+
 import { Comment, Todo } from "../../../types";
 import { requestHeader } from "../../../api/provider";
 
@@ -22,7 +23,7 @@ export const getCommentsByTodoId = ({
   todoId: string;
 }): Promise<CustomResponse> => {
   return axios.get(
-    "https://localhost:7170/api/Comment/getcommentsbytodoid?todoId=" + todoId,
+    "/api/Comment/getcommentsbytodoid?todoId=" + todoId,
     header
   );
 };

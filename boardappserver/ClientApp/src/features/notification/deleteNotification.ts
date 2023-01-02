@@ -1,5 +1,5 @@
 import { useMutation, useQuery } from "@tanstack/react-query";
-import axios from "axios";
+import { axios } from "../../api/axios"
 import { useDispatch } from "react-redux";
 import { requestHeader } from "../../api/provider";
 import { queryClient } from "../../App";
@@ -24,7 +24,7 @@ export const deleteNotification = ({
   notificationId: string;
 }): Promise<CustomResponse> => {
   return axios.delete(
-    "https://localhost:7170/user/deleteNotification?notificationId=" +
+    "/user/deleteNotification?notificationId=" +
       notificationId,
     header
   );

@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import axios from "axios";
+import { axios } from "../../../api/axios"
 import { Todo } from "../../../types";
 import { requestHeader } from "../../../api/provider";
 
@@ -22,7 +22,7 @@ export const getTodosByUserId = ({
   userId: string;
 }): Promise<CustomResponse> => {
   return axios.get(
-    "https://localhost:7170/todo/gettodosbyuserid?userId=" + userId,
+    "/todo/gettodosbyuserid?userId=" + userId,
     header
   );
 };

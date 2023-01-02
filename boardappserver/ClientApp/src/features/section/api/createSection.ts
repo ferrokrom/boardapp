@@ -1,5 +1,6 @@
 import { useMutation } from "@tanstack/react-query";
-import axios, { AxiosError } from "axios";
+import { axios } from "../../../api/axios"
+
 import { Section } from "../../../types";
 import { requestHeader } from "../../../api/provider";
 import { queryClient } from "../../../App";
@@ -14,7 +15,7 @@ const header = requestHeader();
 export const createSection = ({
   boardId,
 }: CreateSectionDTO): Promise<Section[]> => {
-  return axios.post("https://localhost:7170/create?boardId=" + boardId);
+  return axios.post("/create?boardId=" + boardId);
 };
 type UseCreateSectionOptions = {
   boardId: string;

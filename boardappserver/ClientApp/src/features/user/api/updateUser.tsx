@@ -1,5 +1,7 @@
 import { useQuery, useMutation } from "@tanstack/react-query";
-import axios, { AxiosError } from "axios";
+import  { AxiosError } from "axios";
+import { axios } from "../../../api/axios"
+
 import { Board, User } from "../../../types";
 import { requestHeader } from "../../../api/provider";
 import useAuth from "../../../Auth/useAuth";
@@ -50,7 +52,7 @@ export const updateProfile = ({ data }: UpdateUserDTO) => {
     formData.append("Username", data.body.username);
   }
   return axios.put(
-    "https://localhost:7170/user/update?userId=" + data.userId,
+    "/user/update?userId=" + data.userId,
     formData,
     {
       headers: {

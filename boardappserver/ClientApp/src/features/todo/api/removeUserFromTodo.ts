@@ -1,5 +1,7 @@
 import { useMutation } from "@tanstack/react-query";
-import axios, { AxiosError, AxiosResponse } from "axios";
+import { AxiosError, AxiosResponse } from "axios";
+import { axios } from "../../../api/axios"
+
 import { Section, Todo } from "../../../types";
 import { requestHeader } from "../../../api/provider";
 import { queryClient } from "../../../App";
@@ -17,7 +19,7 @@ export const removeUserFromTodo = ({
   userId,
 }: RemoveUserFromTodoDTO): Promise<AxiosResponse> => {
   return axios.post(
-    "https://localhost:7170/user/removetodouser?userId=" + userId,
+    "/user/removetodouser?userId=" + userId,
     todoId,
     header
   );

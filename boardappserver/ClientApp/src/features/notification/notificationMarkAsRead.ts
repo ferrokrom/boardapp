@@ -1,5 +1,6 @@
 import { useMutation, useQuery } from "@tanstack/react-query";
-import axios from "axios";
+import { axios } from "../../api/axios"
+
 import { useDispatch } from "react-redux";
 import { requestHeader } from "../../api/provider";
 import { queryClient } from "../../App";
@@ -24,7 +25,7 @@ export const getUserNotificationsMarkAsRead = ({
   userId: string;
 }): Promise<CustomResponse> => {
   return axios.put(
-    "https://localhost:7170/user/getnotificationsmarkedread?userId=" + userId,
+    "/user/getnotificationsmarkedread?userId=" + userId,
     header
   );
 };

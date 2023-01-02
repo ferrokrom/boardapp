@@ -1,5 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
-import axios, { AxiosError } from "axios";
+import  { AxiosError } from "axios";
+import { axios } from "../../../api/axios"
+
 import { Board } from "../../../types";
 import { requestHeader } from "../../../api/provider";
 
@@ -24,7 +26,7 @@ export const getBoards = ({
   boardId: string | undefined;
 }): Promise<CustomResponse> => {
   return axios.get(
-    "https://localhost:7170/api/Board/getboard?boardId=" + boardId,
+    "/api/Board/getboard?boardId=" + boardId,
     header
   );
 };

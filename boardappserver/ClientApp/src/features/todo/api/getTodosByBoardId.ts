@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
-import axios from "axios";
+import { axios } from "../../../api/axios"
+
 import { Todo } from "../../../types";
 import { requestHeader } from "../../../api/provider";
 
@@ -22,7 +23,7 @@ export const getTodosByBoardId = ({
   boardId: string;
 }): Promise<CustomResponse> => {
   return axios.get(
-    "https://localhost:7170/todo/gettodosbyboardid?boardId=" + boardId,
+    "/todo/gettodosbyboardid?boardId=" + boardId,
     header
   );
 };

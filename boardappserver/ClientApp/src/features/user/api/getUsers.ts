@@ -1,5 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
-import axios, { AxiosError, AxiosResponse } from "axios";
+import  { AxiosError, AxiosResponse } from "axios";
+import { axios } from "../../../api/axios"
+
 import { Board, Todo, User } from "../../../types";
 import { requestHeader } from "../../../api/provider";
 
@@ -14,7 +16,7 @@ type CustomResponse = {
 };
 const header = requestHeader();
 export const getUsers = (): Promise<CustomResponse> => {
-  return axios.get("https://localhost:7170/user/get", header);
+  return axios.get("/user/get", header);
 };
 
 export const useGetUsers = () => {

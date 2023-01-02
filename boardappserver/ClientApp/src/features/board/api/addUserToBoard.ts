@@ -1,9 +1,11 @@
 import { useMutation } from "@tanstack/react-query";
-import axios, { AxiosError, AxiosResponse } from "axios";
+import  { AxiosError, AxiosResponse } from "axios";
 import { Section, Board } from "../../../types";
 import { requestHeader } from "../../../api/provider";
 import { queryClient } from "../../../App";
 import { useDispatch } from "react-redux";
+import { axios } from "../../../api/axios"
+
 import { createNotification } from "../../notification/notificationSlice";
 
 export type AddUserToBoardDTO = {
@@ -17,7 +19,7 @@ export const addUserBoard = ({
   userId,
 }: AddUserToBoardDTO): Promise<AxiosResponse> => {
   return axios.post(
-    "https://localhost:7170/api/Board/addusertoboard?userId=" +
+      `/api/Board/addusertoboard?userId=` +
       userId +
       "&boardid=" +
       boardId,

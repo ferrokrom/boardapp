@@ -1,5 +1,7 @@
 import { useMutation } from "@tanstack/react-query";
-import axios, { AxiosResponse } from "axios";
+import { AxiosResponse } from "axios";
+import { axios } from "../../../api/axios"
+
 import { Section } from "../../../types";
 import { requestHeader } from "../../../api/provider";
 import { queryClient } from "../../../App";
@@ -33,7 +35,7 @@ export const updateSection = ({
   data,
 }: UpdateSectionDTO): Promise<CustomResponse> => {
   return axios.put(
-    "https://localhost:7170/update?sectionId=" + data.sectionId,
+    "/update?sectionId=" + data.sectionId,
     {
       title: data.body.title,
       description: data.body.description,

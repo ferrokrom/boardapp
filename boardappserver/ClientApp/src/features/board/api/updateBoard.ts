@@ -1,5 +1,7 @@
 import { useMutation } from "@tanstack/react-query";
-import axios, { AxiosResponse } from "axios";
+import  { AxiosResponse } from "axios";
+import { axios } from "../../../api/axios"
+
 import { requestHeader } from "../../../api/provider";
 import { queryClient } from "../../../App";
 import { useDispatch } from "react-redux";
@@ -25,7 +27,7 @@ export const updateBoard = ({
 }: UpdateBoardDTO): Promise<AxiosResponse> => {
   console.log("fetching");
   return axios.put(
-    "https://localhost:7170/api/Board/updateboard?boardid=" + data.boardId,
+    "/api/Board/updateboard?boardid=" + data.boardId,
     {
       Title: data.body.title,
       Description: data.body.description,

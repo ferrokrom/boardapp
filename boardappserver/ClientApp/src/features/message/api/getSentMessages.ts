@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
-import axios, { AxiosError, AxiosResponse } from "axios";
-import { Board, Message, Todo } from "../../../types";
+import { axios } from "../../../api/axios"
+
+import { Message, Todo } from "../../../types";
 import { requestHeader } from "../../../api/provider";
 
 type UseSectionsOptions = {
@@ -22,7 +23,7 @@ export const getMessages = ({
   userId: string;
 }): Promise<CustomResponse> => {
   return axios.get(
-    "https://localhost:7170/user/getsentmessages?userId=" + userId,
+    "/user/getsentmessages?userId=" + userId,
     header
   );
 };

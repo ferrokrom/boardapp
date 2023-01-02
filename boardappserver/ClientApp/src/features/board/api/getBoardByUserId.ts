@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
-import axios, { AxiosError } from "axios";
+import { AxiosError } from "axios";
 import { Board } from "../../../types";
+import { axios } from "../../../api/axios"
 import { requestHeader } from "../../../api/provider";
 
 type UseBoardsByUserIdOptions = {
@@ -22,9 +23,10 @@ export const getBoardByUserId = ({
   userId,
 }: {
   userId: string | undefined;
-}): Promise<CustomResponse> => {
+    }): Promise<CustomResponse> => {
+
   return axios.get(
-    "https://localhost:7170/api/Board/getboardbyuserid?userId=" + userId,
+    "/api/Board/getboardbyuserid?userId=" + userId,
     header
   );
 };

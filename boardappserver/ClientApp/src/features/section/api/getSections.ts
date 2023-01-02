@@ -1,5 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
-import axios, { AxiosError } from "axios";
+import  { AxiosError } from "axios";
+import { axios } from "../../../api/axios"
+
 import { Section } from "../../../types";
 import { requestHeader } from "../../../api/provider";
 
@@ -23,7 +25,7 @@ export const getSections = ({
 }: {
   boardId: string | undefined;
 }): Promise<CustomResponse> => {
-  return axios.get("https://localhost:7170/get?boardId=" + boardId, header);
+  return axios.get("/get?boardId=" + boardId, header);
 };
 
 export const useSections = ({ boardId }: UseBoardsOptions) => {

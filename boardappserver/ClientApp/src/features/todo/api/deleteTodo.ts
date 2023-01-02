@@ -1,5 +1,7 @@
 import { useMutation } from "@tanstack/react-query";
-import axios, { AxiosResponse } from "axios";
+import  { AxiosResponse } from "axios";
+import { axios } from "../../../api/axios"
+
 import { Section, Todo } from "../../../types";
 import { requestHeader } from "../../../api/provider";
 import { queryClient } from "../../../App";
@@ -14,7 +16,7 @@ export const deleteTodo = ({
   todoId: string;
 }): Promise<Section[]> => {
   return axios.delete(
-    "https://localhost:7170/todo/delete?todoId=" + todoId,
+    "/todo/delete?todoId=" + todoId,
     header
   );
 };
