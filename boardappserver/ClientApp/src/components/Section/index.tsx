@@ -15,7 +15,8 @@ const Index = ({ section, boardId }: SectionProps) => {
   const [addNewTask, setNewTodo] = useToggle();
 
   const sectionId = section.id;
-  if (!sectionId) {
+
+  if (!section) {
     return (
       <div className="w-full h-48 flex justify-center items-center">
         waiting
@@ -30,8 +31,9 @@ const Index = ({ section, boardId }: SectionProps) => {
     >
       <Header section={section} setNewTodo={setNewTodo} boardId={boardId} />
       {addNewTask && <NewTodo sectionId={sectionId} setNewTodo={setNewTodo} />}
-
-      <TodoList sectionId={sectionId} />
+      
+        <TodoList  sectionId={sectionId} />
+      
     </div>
   );
 };

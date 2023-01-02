@@ -1,17 +1,12 @@
-import React, { FormEvent, useEffect, useRef } from "react";
+import React, { FormEvent,  useRef } from "react";
 import { useState } from "react";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { FaPlus } from "react-icons/fa";
-import { useDispatch } from "react-redux";
-
 import { Section } from "../../types";
-import Button from "../Elements/Button";
 import useToggle from "../../hooks/useToggle";
-
 import InputField from "../Elements/InputField";
 import { useUpdateSection } from "../../features/section/api/updateSection";
-import { previousDay } from "date-fns";
-import useOutsideClick from "../../hooks/useOutsideClick";
+
 import HeaderDropdown from "../Section/HeaderDropdown";
 
 type HeaderProps = {

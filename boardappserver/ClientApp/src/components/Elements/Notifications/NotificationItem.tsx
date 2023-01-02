@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { BsCheck, BsExclamationCircle, BsInfo, BsX } from "react-icons/bs";
 import useToggle from "../../../hooks/useToggle";
 

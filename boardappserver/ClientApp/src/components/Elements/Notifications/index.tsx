@@ -1,9 +1,7 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { BsCheck, BsEraser, BsExclamationCircle, BsInfo } from "react-icons/bs";
 import { useSelector } from "react-redux";
-import { INotifications } from "../../../features/notification/notificationSlice";
-import useOutsideClick from "../../../hooks/useOutsideClick";
-import useToggle from "../../../hooks/useToggle";
+
 import NotificationItem from "./NotificationItem";
 
 const icons = {

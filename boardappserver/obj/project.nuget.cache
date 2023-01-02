@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Mr60D5RSP+Pie9AP7jbfxSNpzPS+Ig11Suaj5b1W80vBTAbhaZN6+yMONki131wFmtfPmDLhKJrTNiXo3NsWNQ==",
+  "dgSpecHash": "vosNhfSiWGL/Jttvjx0GpmcweuMIrpUDvzhHVuR3QqcWPD3zsxZFQ21BWfD70Qul0SGBw4qzsVchvSCdmMTlUw==",
   "success": true,
   "projectFilePath": "C:\\Users\\13053\\source\\repos\\boardappserver\\boardappserver\\boardappserver.csproj",
   "expectedPackageFiles": [
@@ -57,6 +57,8 @@
     "C:\\Users\\13053\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\13053\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\13053\\.nuget\\packages\\microsoft.openapi\\1.3.1\\microsoft.openapi.1.3.1.nupkg.sha512",
+    "C:\\Users\\13053\\.nuget\\packages\\microsoft.typescript.msbuild\\4.9.4\\microsoft.typescript.msbuild.4.9.4.nupkg.sha512",
+    "C:\\Users\\13053\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512",
     "C:\\Users\\13053\\.nuget\\packages\\microsoft.web.infrastructure\\1.0.0\\microsoft.web.infrastructure.1.0.0.nupkg.sha512",
     "C:\\Users\\13053\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\13053\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",

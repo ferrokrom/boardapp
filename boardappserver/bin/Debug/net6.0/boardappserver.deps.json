@@ -17,6 +17,8 @@
           "Microsoft.EntityFrameworkCore": "7.0.0-preview.7.22376.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0-preview.7.22376.2",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.0-preview.7.22376.2",
+          "Microsoft.TypeScript.MSBuild": "4.9.4",
+          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.17.0",
           "Migrations": "1.0.0",
           "React.AspNet": "5.2.12",
           "React.Web": "5.2.12",
@@ -585,6 +587,8 @@
           }
         }
       },
+      "Microsoft.TypeScript.MSBuild/4.9.4": {},
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.17.0": {},
       "Microsoft.Web.Infrastructure/1.0.0": {
         "runtime": {
           "lib/net40/Microsoft.Web.Infrastructure.dll": {
@@ -1412,6 +1416,20 @@
       "sha512": "sha512-2X5CCFJCnx6v86fnpOg4TKlU1ba7MSf1yakeT7VI4846s7i6fOkERwStX94Rcq8wJsLyQYsUitd6vR38viePeA==",
       "path": "microsoft.openapi/1.3.1",
       "hashPath": "microsoft.openapi.1.3.1.nupkg.sha512"
+    },
+    "Microsoft.TypeScript.MSBuild/4.9.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HRuRwFqPik9OGy+SMRVFkbUx8dD+s/5jJ4Sq2p7ARNtchHVQqExIvLwfNBLqyFkNYL+/cbAXdzU5ZUZmnxQftQ==",
+      "path": "microsoft.typescript.msbuild/4.9.4",
+      "hashPath": "microsoft.typescript.msbuild.4.9.4.nupkg.sha512"
+    },
+    "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.17.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gfDtAL1WhkjbRdbZlt/ZeQYCbgRpNCZCGj+yeqHObsNFRDHjq8qZJOX9AyTxJpSRYMi9SJk7JDyAbbVYRgEhAA==",
+      "path": "microsoft.visualstudio.azure.containers.tools.targets/1.17.0",
+      "hashPath": "microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512"
     },
     "Microsoft.Web.Infrastructure/1.0.0": {
       "type": "package",

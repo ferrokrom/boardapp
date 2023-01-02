@@ -4,7 +4,6 @@ import { FaPlus } from "react-icons/fa";
 import { useSections } from "../../features/section/api/getSections";
 import { Board } from "../../types";
 import Button from "../Elements/Button";
-import useToggle from "../../hooks/useToggle";
 import { useCreateSection } from "../../features/section/api/createSection";
 import { useParams } from "react-router-dom";
 

@@ -1,13 +1,12 @@
-import { AxiosResponse } from "axios";
+import axios, { AxiosResponse } from "axios";
 import { LoginCredentialsDTO } from "./types";
 import storage from "../../utils/storage";
-import { axios } from "../../api/axios"
 
 export const loginWithUsernameAndPassword = (
   data: LoginCredentialsDTO
 ): Promise<AxiosResponse> => {
   const { username, password } = data;
-  return axios.post("/api/Auth/login", {
+  return axios.post("https://localhost:7170/api/login", {
     username,
     password,
   });

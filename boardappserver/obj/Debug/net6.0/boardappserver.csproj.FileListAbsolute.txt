@@ -105,8 +105,6 @@ C:\Users\13053\source\repos\boardappserver\boardappserver\bin\Debug\net6.0\React
 C:\Users\13053\source\repos\boardappserver\boardappserver\bin\Debug\net6.0\React.Web.dll
 C:\Users\13053\source\repos\boardappserver\boardappserver\bin\Debug\net6.0\WebActivatorEx.dll
 C:\Users\13053\source\repos\boardappserver\boardappserver\bin\Debug\net6.0\ru-ru\JavaScriptEngineSwitcher.Core.resources.dll
-C:\Users\13053\source\repos\boardappserver\boardappserver\bin\Debug\net6.0\ClientApp\build\asset-manifest.json
-C:\Users\13053\source\repos\boardappserver\boardappserver\bin\Debug\net6.0\ClientApp\build\manifest.json
 C:\Users\13053\source\repos\boardappserver\boardappserver\bin\Debug\net6.0\JavaScriptEngineSwitcher.V8.dll
 C:\Users\13053\source\repos\boardappserver\boardappserver\bin\Debug\net6.0\ClearScript.Core.dll
 C:\Users\13053\source\repos\boardappserver\boardappserver\bin\Debug\net6.0\ClearScript.V8.dll
@@ -116,3 +114,5 @@ C:\Users\13053\source\repos\boardappserver\boardappserver\bin\Debug\net6.0\Clien
 C:\Users\13053\source\repos\boardappserver\boardappserver\bin\Debug\net6.0\ClientApp\package-lock.json
 C:\Users\13053\source\repos\boardappserver\boardappserver\bin\Debug\net6.0\ClientApp\public\manifest.json
 C:\Users\13053\source\repos\boardappserver\boardappserver\bin\Debug\net6.0\ClientApp\tsconfig.json
+C:\Users\13053\source\repos\boardappserver\boardappserver\bin\Debug\net6.0\ClientApp\build\asset-manifest.json
+C:\Users\13053\source\repos\boardappserver\boardappserver\bin\Debug\net6.0\ClientApp\build\manifest.json

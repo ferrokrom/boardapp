@@ -21,7 +21,7 @@ function TodoUserSearch({
   sectionId,
   setIsUserMenuOpen,
 }: UserSearchListProp) {
-  const { data, isLoading, isError } = useGetUsers();
+  const { data, isLoading } = useGetUsers();
   const ref = useRef<HTMLDivElement>(null);
   const allUsers = data?.data.data;
   const [userList, setUserList] = useState(data?.data.data);

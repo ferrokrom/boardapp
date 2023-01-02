@@ -1,6 +1,7 @@
 {
   "name": "projectagile",
   "version": "0.1.0",
+  "homepage": "/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.1",
@@ -28,7 +29,7 @@
     "start": "env-cmd -f .env.staging react-scripts start",
     "test": "react-scripts test",
     "build": "react-scripts build",
-    "start:staging": " react-scripts start",
+    "start:staging": "env-cmd -f .env.staging react-scripts start",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
